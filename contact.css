@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.new-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+    
+}
+.designed{
+    text-align: center;
+}
+.designed a{
+    text-decoration: none;
+    color: white;}
+
+.logo img{
+display: flex;
+flex-direction: column;
+width: 200px;
+border-radius: 4px
+}
+
+.nav-bar ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    gap: 21px;
+
+}
+
+.nav-bar ul li a {
+color: black;
+    text-decoration: none;
+}
+.cont-img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.contact-about{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #252B42;
+color: white;
+
+}
+.in-wrap{
+    padding: 20px 30px;
+}
+.in-wrap h2{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    text-align: center;
+}
+.ul-contact{
+padding: 20px 30px;
+
+
+}
+.ul-contact ul {
+    list-style: none;
+}
+
+.ul-contact ul li{
+   padding: 10px 0;
+   font-size: 1.3rem;
+
+}
+.ul-contact ul li i{
+    padding-right: 5px ;
+}
+
+.contact-about h2{
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.form-wrap{
+    padding: 82px 0;
+}
+
+.input-fields {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 195px;
+    justify-content: center;
+}
+
+.input-fields-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 195px;
+
+}
+
+
+
+.text-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 195px;
+    justify-content: center;
+}
+
+
+
+.form-sec {
+    
+    background:url(/assets/about_bg.jpg) no-repeat;
+    background-size: 100%;
+    margin: -7px;
+    width: 100%;
+
+}
+.btn-wp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box-me {
+    padding: 30px;
+    border:none;
+    border-radius:7px;
+}
+
+.form-text h2{
+    font-size: 1.7rem;
+}
+.form-text p {
+    font-size: 2.1rem
+}
+.form-sec input {
+    padding: 20px;
+    border-radius: 6px;
+    border: none;
+  
+}
+
+
+.btn-sub {
+    background-color: #FFA62B;
+    color: white;
+    
+    width: 190px;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.btn-sub:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+#box-me {
+    padding: 30px;
+}
+
+.form-text {
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+    color: white;
+    padding: 15px 0;
+}
+.designed {
+    padding: 10px;
+    background-color: #181918;
+    color: white;
+
+
+}
+
+.designed h2 {
+    font-size: 1rem;
+    font-weight: 150;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+
+#click{
+    display: none;
+ }
+ #click-2{
+    display: none;
+ }
+ #con{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+ }
+
+@media screen and (max-width:650px){
+
+
+    .input-fields {
+        display: flex;
+        align-items: stretch;
+        gap: 10px;
+        margin: 10px;
+
+        flex-direction: column;
+    }
+#click{
+    display: none;
+}
+#click-2{
+    display: flex;
+}
+.text-box{
+    margin: 0 10px;
+}
+.form-sec{
+  background-image: none;
+  background-color: #252B42;
+}
+    .form-text h2 {
+        font-size: 1.4rem;
+        margin: 10px;
+    }
+    .in-wrap{ 
+        padding: 0px 20px;
+    }
+
+    .ul-contact ul li {
+
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .btn-sub {
+        padding: 10px 20px;
+        margin: 20px;
+
+        margin-inline: 75px;
+
+    }
+
+    .form-sec {
+        padding: 20px 0;
+    }
+
+
+    .nav-bar {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #252B42;
+        height: 100vh;
+        width: 100%;
+    
+    }
+    #click:checked ~ .nav-bar{
+        left: 0%;
+    }
+    .nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        gap: 50px;
+        text-align: center;
+       
+    }
+    .nav-bar ul li a{
+        color: white;
+    }
+    .nav-bar ul li  {
+    padding: 10px;
+    }
+    
+}
